@@ -9,7 +9,7 @@ import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 
 import esclave.stockage.DaoRemote;
-import ynovM.service.StationPOJO;
+import ynovm.service.StationPOJO;
 
 /**
  * 

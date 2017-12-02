@@ -4,7 +4,7 @@ import java.util.List;
 
 import javax.ejb.Remote;
 
-import ynovM.service.StationPOJO;
+import ynovm.service.StationPOJO;
 @Remote
 public interface DaoRemote{
 
