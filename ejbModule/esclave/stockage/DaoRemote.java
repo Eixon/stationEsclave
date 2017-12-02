@@ -1,0 +1,43 @@
+package esclave.stockage;
+
+import java.util.List;
+
+import javax.ejb.Remote;
+
+import ynovM.service.StationPOJO;
+@Remote
+public interface DaoRemote{
+
+	/**
+	 * Méthode retournant la liste des éléments de Dao
+	 */
+	public List<StationPOJO> lireTous();
+
+	/**
+	 * Lecture d'un élément de Dao
+	 */
+	public StationPOJO lire(int cle);
+
+	/**
+	 * Insertion d'un élément dans le Dao
+	 */
+	public void inserer(StationPOJO elt);
+
+	/**
+	 * Mise à jour d'un élément de Dao en fonction d'un index
+	 */
+	public void update(int index, StationPOJO obj);
+
+	// JAVA 8
+	/**
+	 * Mise à jour d'un élément de Dao en fonction d'un objet seulement
+	 */
+	public default void update(StationPOJO obj) {
+	}
+
+	/**
+	 * Effacement d'un élément de Dao
+	 */
+	public void effacer(int cle);
+
+}
