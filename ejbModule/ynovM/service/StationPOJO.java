@@ -32,7 +32,7 @@ public class StationPOJO implements Serializable{
 	private String nom;
 	private String localisation;
 	private double temperature;
-	private String hygometrie;
+	private String hygrometrie;
 	private int nebulosite;
 	private int anemometre;
 	private int pluviometrie;
@@ -90,12 +90,12 @@ public class StationPOJO implements Serializable{
 		this.temperature = temperature;
 	}
 
-	public String getHygometrie() {
-		return hygometrie;
+	public String getHygrometrie() {
+		return hygrometrie;
 	}
 
-	public void setHygometrie(String hygometrie) {
-		this.hygometrie = hygometrie;
+	public void setHygrometrie(String hygometrie) {
+		this.hygrometrie = hygometrie;
 	}
 
 	public int getNebulosite() {
