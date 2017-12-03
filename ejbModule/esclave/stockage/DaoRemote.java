@@ -1,12 +1,13 @@
 package esclave.stockage;
 
+import java.io.Serializable;
 import java.util.List;
 
 import javax.ejb.Remote;
 
 import ynovM.service.StationPOJO;
 @Remote
-public interface DaoRemote{
+public interface DaoRemote extends Serializable {
 
 	/**
 	 * Méthode retournant la liste des éléments de Dao
